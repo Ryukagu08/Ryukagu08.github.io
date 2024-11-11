@@ -69,8 +69,10 @@ img {
   
   }
   #twitter:hover {
-    color: white;
     background-color: rgb(29, 161, 242);
+  }
+  #steam:hover {
+    background-color: rgb(27, 40, 56);
   }
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
