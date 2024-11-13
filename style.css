@@ -79,17 +79,17 @@ a:hover {
   display: inline-block;
   width: 99%;
   margin: auto;
-  padding: 0 0 10px 0;
+  padding: 0 0 0px 0;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .pslogo {
-  width: 60px;
+  width: 50px;
   float: left;
-  margin: 20px 20px 20px 20px;
+  margin: 0 20px 20px 20px;
 }
 .originP {
-  margin: 11px;
+  margin: 0 12px 10px 10px;
   font-size: 17px;
 }
 
