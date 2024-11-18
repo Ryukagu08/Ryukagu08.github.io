@@ -175,7 +175,11 @@ a:hover {
   .ueLogo, .gameLogo, .pslogo {
     width: 50px; /* Reduce el tamaño de las imágenes */
   }
-
+  a {
+    font-size: 16px;
+    padding: 8px;
+    width: 80%;
+  }
   .ueP, .gameP, .originP {
     font-size: 14px; /* Texto más compacto */
     line-height: 1.4; /* Ajusta el espaciado entre líneas */
@@ -187,7 +191,17 @@ a:hover {
   .ueLogo, .gameLogo, .pslogo {
     width: 40px; /* Más pequeñas para pantallas muy pequeñas */
   }
+  a {
+    font-size: 14px;
+    padding: 6px;
+  }
+  h1 {
+    font-size: 20px;
+  }
 
+  h3 {
+    font-size: 14px;
+  }
   .ueP, .gameP, .originP {
     font-size: 12px; /* Texto más pequeño */
     line-height: 1.3;
