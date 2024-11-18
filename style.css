@@ -1,9 +1,10 @@
 .logo {
-  border-radius: 75px;
-  animation: bounce 2s;
-  margin-top: 20px;
-  transition: transform 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 20px auto; /* Centra horizontalmente */
+    border-radius: 75px;
+    animation: bounce 2s;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .logo:hover {
   transform: scale(1.05);
@@ -18,7 +19,8 @@ h1:hover {
   transform: scale(1.05);
 }
 h3 {
-  font-size: 18px;
+    font-size: 18px;
+    text-align: center; /* Centra horizontalmente */
 }
 h3 i::after {
   content: '_';
@@ -26,14 +28,12 @@ h3 i::after {
   font-size: 25px;
 }
 .loading-text {
-  font-size: 18px;
-}
-.dots::after {
-  content: '';
-  display: inline-block;
-  text-align: left;
-  width: 1em;
-  animation: dots 3s steps(4, end) infinite;
+    font-size: 18px;
+    text-align: center; /* Centra horizontalmente */
+  }
+  
+  .dots {
+    display: inline-block; /* Asegura que los puntos se mantengan en línea */
 }
   
 body {
@@ -161,4 +161,68 @@ a:hover {
     opacity: 0;
   }
 }
+
+/* General adjustments for small devices */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      text-align: left;
+      padding: 10px;
+    }
+  
+    .logo {
+      width: 100px;
+      margin-top: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      width: auto;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    a {
+      font-size: 16px;
+      padding: 8px;
+      width: 80%;
+    }
+  
+    .ueDiv, .game, .parrafo {
+      width: 100%;
+      margin: 10px auto;
+      padding: 10px;
+    }
+  
+    .ueLogo, .gameLogo, .pslogo {
+      width: 40px;
+      margin: 10px;
+    }
+  
+    .ueP, .gameP, .originP {
+      font-size: 14px;
+    }
+  }
+  
+  /* Further adjustments for very small devices (phones) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  
+    a {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .ueP, .gameP, .originP {
+      font-size: 12px;
+    }
+  }
   
