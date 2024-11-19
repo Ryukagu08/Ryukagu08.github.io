@@ -193,9 +193,11 @@ a:hover {
     width: 50px; /* Reduce el tamaño de las imágenes */
   }
   a {
-    font-size: 16px;
+    font-size: 28px;
     padding: 8px;
     width: 80%;
+    line-height: 50px;
+    text-align: center;
   }
   .ueP, .gameP, .originP {
     font-size: 14px; /* Texto más compacto */
@@ -209,7 +211,7 @@ a:hover {
     width: 40px; /* Más pequeñas para pantallas muy pequeñas */
   }
   a {
-    font-size: 14px;
+    font-size: 22px;
     padding: 6px;
   }
   h1 {
