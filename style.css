@@ -57,6 +57,13 @@ a {
   transition: transform 0.5s ease;
   width: 30%;
 }
+
+#adrokev {
+  margin: auto;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
+}
   
 a:hover {
   color: white;
@@ -73,6 +80,10 @@ a:hover {
 }
 #steam:hover {
   background-color: rgb(27, 40, 56);
+}
+#adrokev:hover {
+  background-color: rgb(255, 255, 255);
+  color: black
 }
 
 .ueDiv {
@@ -124,21 +135,26 @@ a:hover {
     transform: translateY(-5px);
   }
 }
+.dots::after {
+  content: '';
+  animation: dots 4s steps(4, end) infinite;
+}
+
 @keyframes dots {
-    0% {
-    content: '';
+  0% {
+      content: '';
   }
   25% {
-    content: '.';
+      content: '.';
   }
   50% {
-    content: '..';
+      content: '..';
   }
   75% {
-    content: '...';
+      content: '...';
   }
   100% {
-    content: '';
+      content: '';
   }
 }
 @keyframes blink {
@@ -146,6 +162,7 @@ a:hover {
     opacity: 0;
   }
 }
+
 /* Contenedores principales para imágenes y texto */
 .ueDiv, .game, .parrafo {
   display: flex; /* Activa Flexbox */
