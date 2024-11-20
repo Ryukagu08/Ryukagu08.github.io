@@ -185,6 +185,7 @@ a:hover {
   flex: 1; /* Permite que el texto ocupe el espacio restante */
   font-size: 16px; /* Tamaño del texto ajustado */
   line-height: 1.5; /* Mejora la legibilidad */
+  margin: auto;
 }
 
 /* Ajustes para pantallas medianas */
@@ -202,6 +203,7 @@ a:hover {
   .ueP, .gameP, .originP {
     font-size: 14px; /* Texto más compacto */
     line-height: 1.4; /* Ajusta el espaciado entre líneas */
+    margin: auto;
   }
 }
 
@@ -224,5 +226,6 @@ a:hover {
   .ueP, .gameP, .originP {
     font-size: 12px; /* Texto más pequeño */
     line-height: 1.3;
+    margin: auto;
   }
 }
