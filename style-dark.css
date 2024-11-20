@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e1e2f, #121214); /* Fondo oscuro con gradiente */
+    color: #eaeaea; /* Texto claro */
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    width: 140px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Sombra tenue */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 10px 0;
+    color: #ffffff; /* Blanco puro */
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #d0d0d0; /* Gris claro */
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 12px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2rem;
+    color: #ffffff; /* Blanco */
+    background: #2e2e3e; /* Fondo oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.links a:hover {
+    transform: translateY(-5px);
+}
+
+#github:hover {
+    background-color: #333; /* Negro más oscuro */
+}
+
+#youtube:hover {
+    background-color: #ff4444; /* Rojo claro */
+}
+
+#twitter:hover {
+    background-color: #1da1f2; /* Azul Twitter */
+}
+
+#steam:hover {
+    background-color: #0b0c10; /* Muy oscuro */
+}
+
+#adrokev:hover {
+    background-color: #000000; /* Cian brillante */
+    color: white; /* Texto oscuro */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.content div {
+    background: rgba(45, 45, 55, 0.9); /* Fondo oscuro con opacidad */
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Sombras profundas */
+}
+
+img {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .links a {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+
+    img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .links a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+/* Botón de cambio de tema */
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#theme-icon {
+    font-size: 24px;
+    color: #ffffff; /* Iconos blancos */
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+#theme-toggle:hover #theme-icon {
+    transform: scale(1.2); /* Icon grows a bit on hover */
+}

@@ -1,67 +1,61 @@
 <!DOCTYPE html>
-  <html>
-
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryu's Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  </head>
+    <link id="theme-style" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://yt3.googleusercontent.com/mq-3eC5W8xJl_N0uX9iL8GqBNzVGevuTP8eoW8M5rHAnpXfMHXMOoUGSH9BfTIs2wcgDx0aoTg=s160-c-k-c0x00ffffff-no-rj" alt="Ryu's Logo">
+        <h1>Ryu</h1>
+        <h3><i class="fas fa-code"></i> Rookie Unreal Engine Developer</h3>
+    </header>
 
-  <body>
+    <!-- Botón de cambio de tema -->
+    <button id="theme-toggle" aria-label="Toggle Theme">
+        <i id="theme-icon" class="fas fa-sun"></i>
+    </button>
 
-    <img class="logo" src="https://yt3.googleusercontent.com/mq-3eC5W8xJl_N0uX9iL8GqBNzVGevuTP8eoW8M5rHAnpXfMHXMOoUGSH9BfTIs2wcgDx0aoTg=s160-c-k-c0x00ffffff-no-rj" width="150"/>
-    
-    <h1>Ryu</h1>
-    
-    <h3><i class="fas fa-code"></i> Rookie Unreal Engine Developer</h3>
+    <main>
+        <section class="links">
+            <a id="github" href="https://github.com/Ryukagu08" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a id="youtube" href="https://www.youtube.com/@ryukagu08" target="_blank">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a id="twitter" href="https://x.com/Ryukagu08" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a id="steam" href="https://steamcommunity.com/id/76581283128385" target="_blank">
+                <i class="fab fa-steam"></i> Steam
+            </a>
+            <a id="adrokev" href="https://ryukagu08.github.io/adrokev.github.io" target="_blank">
+                Team
+            </a>
+        </section>
 
-    <a id="github" href="https://github.com/Ryukagu08"><i class="fa-brands fa-github"></i> GitHub</a>
-    
-    <a id="youtube" href="https://www.youtube.com/@ryukagu08"><i class="fab fa-brands fa-youtube"></i> YouTube</a>
+        <section class="content">
+            <div class="ueDiv">
+                <img class="ueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/2509px-Unreal_Engine_Logo.svg.png" alt="UE Logo">
+                <p>I find Unreal Engine as an extremely exciting tool to see what I could achieve in the gaming environment. Even though I really enjoy the graphic part of UE, I also need to learn C++ and include coding into my games. UE helps me unleash my creativity.</p>
+            </div>
 
-    <a id="twitter" href="https://x.com/Ryukagu08"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
-    
-    <a id="steam" href="https://steamcommunity.com/id/76581283128385"><i class="fa-brands fa-steam"></i> Steam</a>
+            <div class="game">
+                <img class="gameLogo" src="https://i.pinimg.com/originals/6e/83/4d/6e834da5557c1d6953a8b6a39ba196e8.png" alt="Game Logo">
+                <p>Working at the moment into a horror type indie game. While also trying to improve my UE skills. This is a small project, so I get a better understanding of the engine and how it works. No ETA of when the developing would end, but definitely not soon since I'm trying to implement a bunch of mechanics and polish some things.</p>
+            </div>
 
-    <div class="loading-text">
-      <p>Learning to code<span class="dots"></span></p>
-    </div>
+            <div class="parrafo">
+                <img class="pslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png" alt="PS Logo">
+                <p>The origin of my username isn't something crazy or creative. It was a couple of years ago when I bought my first PS4. I had a friend of mine help me set up my new PS account, and we typed randomly the account username, ending up as Ryukagu08. Since then I've been using that username, usually shortening it to Ryu.</p>
+            </div>
+        </section>
+    </main>
 
-    <a id="adrokev" href="https://ryukagu08.github.io/adrokev.github.io">Team</a>
-
-    <div class="ueDiv">
-      <img class="ueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/2509px-Unreal_Engine_Logo.svg.png">
-      <p class="ueP">
-        I find Unreal Engine as an extremely exciting tool to see what I could achieve in the gaming environment.
-        Even though I really enjoy the graphic part of UE, I also need to learn C++ and include coding into my games.
-        UE helps me unleash my creativity.
-      </p>
-    </div>
-    
-    <div class="game">
-      <br>
-      <img class="gameLogo" src="https://i.pinimg.com/originals/6e/83/4d/6e834da5557c1d6953a8b6a39ba196e8.png">
-      <p class="gameP">
-        Working at the moment into a horror type indie game. While also trying to improve my UE skills.
-        This is a small project, so I get a better understanding of the engine and how it works. No ETA of when
-        the developing would end, but definitely not soon since I'm trying to implement a bunch of mechanics and
-        polish some things.
-      </p>
-    </div>
-    
-    <div class="parrafo">
-      <br>
-      <img class="pslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png">
-      <p class="originP">
-        The origin of my username isn't something crazy or creative. 
-        It was a couple of years ago when I bought my first PS4. 
-        I had a friend of mine help me set up my new PS account, 
-        and we typed randomly the account username, ending up as Ryukagu08.
-       Since then I've been using that username, usually shortening it to Ryu.
-      </p>
-    </div>
-
-  </body>
-
+    <script src="script.js"></script>
+</body>
 </html>
