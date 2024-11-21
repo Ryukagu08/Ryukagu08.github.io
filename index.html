@@ -3,59 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryu's Website</title>
-    <link id="theme-style" rel="stylesheet" href="style.css"> <!-- Light theme is applied by default -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Adrokev Games</title>
+    <link rel="manifest" href="/site.webmanifest.json">
+    <link rel="icon" href="adrokev-favicon.ico" type="image/x-icon">
+    <link id="theme-style" rel="stylesheet" href="style.css"> <!-- Default to dark mode -->
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="fade-in">
-        <img class="logo" src="https://yt3.googleusercontent.com/mq-3eC5W8xJl_N0uX9iL8GqBNzVGevuTP8eoW8M5rHAnpXfMHXMOoUGSH9BfTIs2wcgDx0aoTg=s160-c-k-c0x00ffffff-no-rj" alt="Ryu's Logo">
-        <h1>Ryu</h1>
-        <h3><i class="fas fa-code"></i> Rookie Unreal Engine Developer</h3>
-    </header>
-
     <!-- Theme Toggle Button -->
-    <button id="theme-toggle" aria-label="Toggle Theme" class="fade-in">
-        <i id="theme-icon" class="fas fa-moon"></i> <!-- Start with the moon for light mode -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-sun"></i> <!-- Icon for light mode -->
     </button>
 
-    <main class="fade-in">
-        <section class="links">
-            <a id="github" href="https://github.com/Ryukagu08" target="_blank" class="link-hover">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a id="youtube" href="https://www.youtube.com/@ryukagu08" target="_blank" class="link-hover">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
-            <a id="twitter" href="https://x.com/Ryukagu08" target="_blank" class="link-hover">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a id="steam" href="https://steamcommunity.com/id/76581283128385" target="_blank" class="link-hover">
-                <i class="fab fa-steam"></i> Steam
-            </a>
-            <a id="adrokev" href="https://ryukagu08.github.io/adrokev.github.io" target="_blank" class="link-hover">
-                Team
-            </a>
-        </section>
+    <!-- Header Section -->
+    <header class="header fade-in">
+        <div class="logo-container">
+            <img id="logo" class="logo" src="https://i.ibb.co/HVBM2Q9/white-black-no-BG.png" alt="Adrokev Logo">
+            <h1 class="name">ADROKEV GAMES</h1>
+        </div>
+    </header>
 
-        <section class="content">
-            <div class="ueDiv fade-in">
-                <img class="ueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Unreal_Engine_Logo.svg/2509px-Unreal_Engine_Logo.svg.png" alt="UE Logo">
-                <p>I find Unreal Engine as an extremely exciting tool to see what I could achieve in the gaming environment. Even though I really enjoy the graphic part of UE, I also need to learn C++ and include coding into my games. UE helps me unleash my creativity.</p>
+    <!-- About Section -->
+    <section class="about fade-in">
+        <p class="about-text">
+            We are a small, passionate development team dedicated to crafting unique gaming experiences. Our journey begins with indie projects that shape our vision for the future.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects fade-in">
+        <div class="project">
+            <img class="project-image" src="https://i.ytimg.com/vi/nzf6z1v4R28/hq720.jpg" alt="Placeholder Image">
+            <div class="project-info">
+                <h2 class="project-title">Indie Horror Game</h2>
+                <p class="project-description">
+                    Our first project is a small indie horror game currently under development. It’s a stepping stone to bigger dreams and greater achievements.
+                </p>
+                <p class="disclaimer">*Image is a placeholder and not related to the project</p>
             </div>
+        </div>
+    </section>
 
-            <div class="game fade-in">
-                <img class="gameLogo" src="https://i.pinimg.com/originals/6e/83/4d/6e834da5557c1d6953a8b6a39ba196e8.png" alt="Game Logo">
-                <p>Working at the moment into a horror type indie game. While also trying to improve my UE skills. This is a small project, so I get a better understanding of the engine and how it works. No ETA of when the developing would end, but definitely not soon since I'm trying to implement a bunch of mechanics and polish some things.</p>
-            </div>
-
-            <div class="parrafo fade-in">
-                <img class="pslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png" alt="PS Logo">
-                <p>The origin of my username isn't something crazy or creative. It was a couple of years ago when I bought my first PS4. I had a friend of mine help me set up my new PS account, and we typed randomly the account username, ending up as Ryukagu08. Since then I've been using that username, usually shortening it to Ryu.</p>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Adrokev Games. All rights reserved.</p>
+    </footer>
 </body>
 </html>
