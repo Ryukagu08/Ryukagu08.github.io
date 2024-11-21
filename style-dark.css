@@ -8,6 +8,79 @@ body {
     animation: fadeIn 1s ease-out;
 }
 
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 10px; /* Add margin from the top */
+    left: 20px; /* Add margin from the left */
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d0d0d0; /* Light gray text */
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center; /* Vertically align text and icon */
+    gap: 5px; /* Space between icon and text */
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a i {
+    font-size: 1.2rem; /* Slightly larger icon size */
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Highlight color on hover */
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Header and Logo */
+header {
+    padding: 80px 20px 20px; /* Adjust padding to avoid overlap with navbar */
+}
+
+.logo {
+    width: 140px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #d0d0d0;
+}
+
+/* Content Section */
+.content {
+    margin-top: 40px; /* Ensure proper spacing below the navbar */
+}
+
+
+
 /* Fade-in animation for page load */
 @keyframes fadeIn {
     0% {
