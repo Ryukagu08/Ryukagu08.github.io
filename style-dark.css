@@ -5,8 +5,24 @@ body {
     color: #eaeaea; /* Texto claro */
     margin: 0;
     text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
+/* Fade-in animation for page load */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Header and Logo */
 header {
     padding: 20px;
 }
@@ -77,6 +93,7 @@ h3 {
     align-items: center;
     gap: 25px;
     padding: 20px;
+    text-align: justify;
 }
 
 .content div {
