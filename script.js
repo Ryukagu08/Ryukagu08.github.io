@@ -1,33 +1,34 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const themeToggle = document.getElementById("theme-toggle");
-    const themeIcon = document.getElementById("theme-icon");
+// Select elements
+const themeToggleButton = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const themeStyle = document.getElementById('theme-style');
 
-    // Ensure correct icon is set based on the theme
-    const currentTheme = document.documentElement.getAttribute("data-theme");
-    if (currentTheme === "style-dark.css") {
-        themeIcon.classList.remove("fa-moon");
-        themeIcon.classList.add("fa-sun");
+// Function to switch theme
+function switchTheme(theme) {
+    if (theme === 'dark') {
+        themeStyle.setAttribute('href', 'style-dark.css');
+        themeIcon.classList.replace('fa-moon', 'fa-sun'); // Change icon to sun
     } else {
-        themeIcon.classList.remove("fa-sun");
-        themeIcon.classList.add("fa-moon");
+        themeStyle.setAttribute('href', 'style.css');
+        themeIcon.classList.replace('fa-sun', 'fa-moon'); // Change icon to moon
     }
+}
 
-    // Toggle theme on button click
-    themeToggle.addEventListener("click", () => {
-        const currentTheme = document.documentElement.getAttribute("data-theme");
+// Event listener for theme toggle button
+themeToggleButton.addEventListener('click', () => {
+    // Determine current theme
+    const currentTheme = themeStyle.getAttribute('href') === 'style.css' ? 'light' : 'dark';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    // Apply new theme
+    switchTheme(newTheme);
 
-        if (currentTheme === "style.css") {
-            document.documentElement.setAttribute("data-theme", "style-dark.css");
-            document.getElementById("theme-style").setAttribute("href", "style-dark.css");
-            themeIcon.classList.remove("fa-moon");
-            themeIcon.classList.add("fa-sun");
-            localStorage.setItem("theme", "style-dark.css");
-        } else {
-            document.documentElement.setAttribute("data-theme", "style.css");
-            document.getElementById("theme-style").setAttribute("href", "style.css");
-            themeIcon.classList.remove("fa-sun");
-            themeIcon.classList.add("fa-moon");
-            localStorage.setItem("theme", "style.css");
-        }
-    });
+    // Save new theme in localStorage
+    localStorage.setItem('theme', newTheme);
+});
+
+// Check localStorage for saved theme on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
+    switchTheme(savedTheme);
 });
