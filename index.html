@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryu's Website</title>
-    <link id="theme-style" rel="stylesheet" href="style.css">
+    
+    <!-- Apply the saved theme before the page renders -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem("theme") || "style.css"; // Default to light theme
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            document.write(`<link id="theme-style" rel="stylesheet" href="${savedTheme}">`);
+        })();
+    </script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- Metadata for Embeds -->
@@ -21,7 +30,6 @@
     <meta name="twitter:description" content="Explore Ryu's work and learn more about his journey as a rookie Unreal Engine developer!" />
     <meta name="twitter:image" content="https://yt3.googleusercontent.com/mq-3eC5W8xJl_N0uX9iL8GqBNzVGevuTP8eoW8M5rHAnpXfMHXMOoUGSH9BfTIs2wcgDx0aoTg=s160-c-k-c0x00ffffff-no-rj" />
     <meta name="twitter:url" content="https://ryukagu08.github.io" />
-
 </head>
 <body>
     <!-- Navigation Bar -->
