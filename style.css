@@ -40,11 +40,11 @@ body {
 }
 
 .nav-links a i {
-  font-size: 1.2rem; /* Slightly larger icon size */
+  font-size: 1.2rem;
 }
 
 .nav-links a:hover {
-  color: #ff2020; /* Highlight color on hover */
+  color: #ff2020;
   border-bottom: 2px solid #ff2020;
 }
 
@@ -98,7 +98,7 @@ header {
 }
 
 .logo {
-  width: 140px; /* Un poco más grande */
+  width: 140px;
   border-radius: 50%;
   transition: transform 0.5s ease;
 }
@@ -108,7 +108,7 @@ header {
 }
 
 h1 {
-  font-size: 2.8rem; /* Aumenta para mayor impacto */
+  font-size: 2.8rem;
   margin: 10px 0;
 }
 
@@ -119,13 +119,13 @@ h3 {
 .links a {
   display: inline-block;
   text-decoration: none;
-  padding: 15px 25px; /* Aumenta el tamaño del área clicable */
+  padding: 15px 25px;
   margin: 12px;
-  border-radius: 10px; /* Más redondeado para mejorar accesibilidad */
+  border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  font-size: 1.2rem; /* Texto más grande */
+  font-size: 1.2rem;
   color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 .links a:hover {
@@ -181,19 +181,18 @@ h3 {
 }
 
 img {
-  width: 60px; /* Más grande para consistencia */
+  width: 60px;
   height: auto;
   border-radius: 5px;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   h1 {
       font-size: 2.4rem;
   }
 
   .links a {
-      font-size: 1.1rem; /* Ajuste para pantallas medianas */
+      font-size: 1.3rem;
       padding: 12px 20px;
   }
 
@@ -208,8 +207,9 @@ img {
   }
 
   .links a {
-      font-size: 1rem; /* Texto más pequeño pero todavía accesible */
+      font-size: 1.4rem;
       padding: 10px 15px;
+      display: block;
   }
 
   img {
@@ -217,7 +217,7 @@ img {
   }
 }
 
-/* Botón de cambio de tema */
+
 #theme-toggle {
   position: fixed;
   top: 10px;
@@ -232,14 +232,14 @@ img {
 
 #theme-icon {
   font-size: 24px;
-  color: #ffffff; /* Iconos blancos */
+  color: #ffffff;
   transition: transform 0.3s ease;
 }
 
 #theme-toggle:hover {
-  transform: scale(1.1); /* Increase size on hover */
+  transform: scale(1.1);
 }
 
 #theme-toggle:hover #theme-icon {
-  transform: scale(1.2); /* Icon grows a bit on hover */
+  transform: scale(1.2);
 }

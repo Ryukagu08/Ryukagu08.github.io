@@ -1,8 +1,8 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1e1e2f, #121214); /* Fondo oscuro con gradiente */
-    color: #eaeaea; /* Texto claro */
+    background: linear-gradient(to right, #1e1e2f, #121214); 
+    color: #eaeaea; 
     margin: 0;
     text-align: center;
     animation: fadeIn 1s ease-out;
@@ -29,7 +29,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #d0d0d0; /* Light gray text */
+    color: #d0d0d0;
     font-size: 1.1rem;
     padding: 5px 10px;
     display: flex;
@@ -81,7 +81,7 @@ h3 {
 
 
 
-/* Fade-in animation for page load */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -104,7 +104,7 @@ header {
     width: 140px;
     border-radius: 50%;
     transition: transform 0.5s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Sombra tenue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); 
 }
 
 .logo:hover {
@@ -114,12 +114,12 @@ header {
 h1 {
     font-size: 2.8rem;
     margin: 10px 0;
-    color: #ffffff; /* Blanco puro */
+    color: #ffffff; 
 }
 
 h3 {
     font-size: 1.4rem;
-    color: #d0d0d0; /* Gris claro */
+    color: #d0d0d0; 
 }
 
 .links a {
@@ -130,8 +130,8 @@ h3 {
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-size: 1.2rem;
-    color: #ffffff; /* Blanco */
-    background: #2e2e3e; /* Fondo oscuro */
+    color: #ffffff; 
+    background: #2e2e3e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,24 +140,24 @@ h3 {
 }
 
 #github:hover {
-    background-color: #333; /* Negro más oscuro */
+    background-color: #333;
 }
 
 #youtube:hover {
-    background-color: #ff4444; /* Rojo claro */
+    background-color: #ff4444;
 }
 
 #twitter:hover {
-    background-color: #1da1f2; /* Azul Twitter */
+    background-color: #1da1f2; 
 }
 
 #steam:hover {
-    background-color: #0b0c10; /* Muy oscuro */
+    background-color: #0b0c10;
 }
 
 #adrokev:hover {
-    background-color: #000000; /* Cian brillante */
-    color: white; /* Texto oscuro */
+    background-color: #000000;
+    color: white;
 }
 
 .content {
@@ -177,7 +177,7 @@ h3 {
 }
 
 .content div {
-    background: rgba(45, 45, 55, 0.9); /* Fondo oscuro con opacidad */
+    background: rgba(45, 45, 55, 0.9);
     border-radius: 10px;
     padding: 20px;
     width: 90%;
@@ -185,7 +185,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Sombras profundas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
 }
 
 img {
@@ -194,38 +194,38 @@ img {
     border-radius: 5px;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.4rem;
-    }
-
-    .links a {
-        font-size: 1.1rem;
-        padding: 12px 20px;
-    }
-
-    img {
-        width: 50px;
-    }
+h1 {
+    font-size: 2.4rem;
 }
-
+  
+.links a {
+    font-size: 1.3rem;
+    padding: 12px 20px;
+}
+  
+img {
+    width: 50px;
+}
+}
+  
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .links a {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-
-    img {
-        width: 40px;
-    }
+h1 {
+    font-size: 2rem;
+}
+  
+.links a {
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    display: block;
+}
+  
+img {
+    width: 40px;
+}
 }
 
-/* Botón de cambio de tema */
 #theme-toggle {
     position: fixed;
     top: 10px;
@@ -240,7 +240,7 @@ img {
 
 #theme-icon {
     font-size: 24px;
-    color: #ffffff; /* Iconos blancos */
+    color: #ffffff;
     transition: transform 0.3s ease;
 }
 
