@@ -3,32 +3,32 @@ const themeToggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 const themeStyle = document.getElementById('theme-style');
 
-// Function to switch theme
-function switchTheme(theme) {
-    if (theme === 'dark') {
-        themeStyle.setAttribute('href', 'style-dark.css');
-        themeIcon.classList.replace('fa-moon', 'fa-sun'); // Change icon to sun
-    } else {
-        themeStyle.setAttribute('href', 'style.css');
-        themeIcon.classList.replace('fa-sun', 'fa-moon'); // Change icon to moon
-    }
+// Function to toggle theme
+function toggleTheme() {
+    const currentTheme = themeStyle.getAttribute('href') === 'style.css' ? 'light' : 'dark';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    // Update the stylesheet
+    themeStyle.setAttribute('href', newTheme === 'light' ? 'style.css' : 'style-dark.css');
+
+    // Update the icon
+    themeIcon.className = newTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+
+    // Save the theme to localStorage
+    localStorage.setItem('theme', newTheme);
+}
+
+// Function to load the saved theme
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    // Apply the saved theme
+    themeStyle.setAttribute('href', savedTheme === 'light' ? 'style.css' : 'style-dark.css');
+    themeIcon.className = savedTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
 }
 
 // Event listener for theme toggle button
-themeToggleButton.addEventListener('click', () => {
-    // Determine current theme
-    const currentTheme = themeStyle.getAttribute('href') === 'style.css' ? 'light' : 'dark';
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
-    // Apply new theme
-    switchTheme(newTheme);
+themeToggleButton.addEventListener('click', toggleTheme);
 
-    // Save new theme in localStorage
-    localStorage.setItem('theme', newTheme);
-});
-
-// Check localStorage for saved theme on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
-    switchTheme(savedTheme);
-});
+// Load theme on page load
+document.addEventListener('DOMContentLoaded', loadTheme);
